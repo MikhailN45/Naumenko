@@ -44,11 +44,11 @@ class FilmViewHolder(
         Glide
             .with(binding.root)
             .load(film.poster)
-            .into(favListSmallPoster)
-        favListFilmTitle.text = film.title
-        favListFilmYear.text = film.year
-        favListFilmGenre.text = film.genres
+            .into(filmListSmallPoster)
+        filmListFilmTitle.text = film.title
+        filmListFilmYear.text = film.year
+        filmListFilmGenre.text = film.genres
         filmListFavoritesIcon.setImageResource(R.drawable.favs_icon)
-        filmCard.setOnClickListener { clickListener.onFilmClick(film) }
+        filmCardList.setOnClickListener { clickListener.onFilmClick(film) }
     }
 }

@@ -18,12 +18,12 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/film_card"
+            android:id="@+id/film_card_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/fav_list_small_poster"
+                android:id="@+id/film_list_small_poster"
                 android:layout_width="40dp"
                 android:layout_height="63dp"
                 android:layout_marginStart="15dp"
@@ -37,7 +37,7 @@
                 tools:src="@drawable/small_poster" />
 
             <TextView
-                android:id="@+id/fav_list_film_title"
+                android:id="@+id/film_list_film_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -49,13 +49,13 @@
                 android:textColor="@color/black"
                 android:textFontWeight="600"
                 android:textSize="16sp"
-                app:layout_constraintStart_toEndOf="@id/fav_list_small_poster"
+                app:layout_constraintStart_toEndOf="@id/film_list_small_poster"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:targetApi="p"
                 tools:text="@string/star_wars_title" />
 
             <TextView
-                android:id="@+id/fav_list_film_year"
+                android:id="@+id/film_list_film_year"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -64,13 +64,13 @@
                 android:fontFamily="@font/roboto_light"
                 android:textFontWeight="800"
                 android:textSize="15sp"
-                app:layout_constraintStart_toEndOf="@id/fav_list_small_poster"
-                app:layout_constraintTop_toBottomOf="@id/fav_list_film_title"
+                app:layout_constraintStart_toEndOf="@id/film_list_small_poster"
+                app:layout_constraintTop_toBottomOf="@id/film_list_film_title"
                 tools:targetApi="p"
                 tools:text="@string/_2015" />
 
             <TextView
-                android:id="@+id/fav_list_film_genre"
+                android:id="@+id/film_list_film_genre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -81,8 +81,8 @@
                 android:maxLines="1"
                 android:textFontWeight="500"
                 android:textSize="15sp"
-                app:layout_constraintStart_toEndOf="@id/fav_list_film_year"
-                app:layout_constraintTop_toBottomOf="@id/fav_list_film_title"
+                app:layout_constraintStart_toEndOf="@id/film_list_film_year"
+                app:layout_constraintTop_toBottomOf="@id/film_list_film_title"
                 tools:targetApi="p"
                 tools:text="@string/fantasy" />
 
@@ -103,7 +103,6 @@
                 android:src="@drawable/favs_icon"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
