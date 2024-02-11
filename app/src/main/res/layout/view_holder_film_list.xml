@@ -10,15 +10,15 @@
         android:id="@+id/film_card_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
         android:layout_margin="8dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="16dp"
         app:cardCornerRadius="20dp"
         app:cardElevation="8dp"
-        android:clickable="true"
-        android:padding="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:focusable="true">
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -36,8 +36,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:shapeAppearanceOverlay="@style/roundedImageView"
-                />
+                app:shapeAppearanceOverlay="@style/roundedImageView" />
 
 
             <TextView
@@ -55,7 +54,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/film_list_small_poster"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:text="Film Title" />
+                tools:text="@string/film_title" />
 
             <TextView
                 android:id="@+id/film_list_film_year"
@@ -67,7 +66,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/film_list_small_poster"
                 app:layout_constraintTop_toBottomOf="@+id/film_list_film_title"
-                tools:text="2000" />
+                tools:text="@string/_2000" />
 
             <TextView
                 android:id="@+id/film_list_film_genre"
@@ -85,7 +84,7 @@
                 app:layout_constraintTop_toBottomOf="@id/film_list_film_title"
                 app:layout_constraintVertical_bias="0.333"
                 tools:targetApi="p"
-                />
+                tools:text="@string/genres" />
 
             <com.google.android.material.divider.MaterialDivider
                 android:id="@+id/materialDivider"
@@ -97,12 +96,13 @@
                 android:id="@+id/film_list_favorites_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/favorites"
                 android:visibility="invisible"
                 app:layout_constraintBottom_toBottomOf="@+id/film_list_film_title"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/film_list_film_title"
                 app:srcCompat="@drawable/favs_icon"
-                android:contentDescription="@string/favorites"/>
+                tools:visibility="visible" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.card.MaterialCardView>

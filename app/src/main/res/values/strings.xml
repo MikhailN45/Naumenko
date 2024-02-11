@@ -12,5 +12,7 @@
     <string name="fileName">"%1$d.jpeg"</string>
     <string name="retry">Повторить</string>
     <string name="favorites">Избранное</string>
+    <string name="_2000">2000</string>
+    <string name="film_title">Film Title</string>
 
 </resources>

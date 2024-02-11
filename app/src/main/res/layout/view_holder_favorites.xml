@@ -54,6 +54,7 @@
                 app:layout_constraintStart_toEndOf="@id/fav_list_small_poster"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:targetApi="p"
+                tools:text="@string/film_title"
                 />
 
             <TextView
@@ -71,6 +72,7 @@
                 app:layout_constraintStart_toEndOf="@id/fav_list_film_year"
                 app:layout_constraintTop_toBottomOf="@id/fav_list_film_title"
                 tools:targetApi="p"
+                tools:text="@string/genres"
                 />
 
             <TextView
@@ -86,6 +88,7 @@
                 app:layout_constraintStart_toEndOf="@id/fav_list_small_poster"
                 app:layout_constraintTop_toBottomOf="@id/fav_list_film_title"
                 tools:targetApi="p"
+                tools:text="@string/_2000"
                 />
 
             <androidx.constraintlayout.widget.Barrier
