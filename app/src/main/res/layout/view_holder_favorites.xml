@@ -34,7 +34,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:shapeAppearanceOverlay="@style/roundedImageView"
-                tools:src="@drawable/small_poster" />
+                />
 
             <TextView
                 android:id="@+id/fav_list_film_title"
@@ -52,7 +52,7 @@
                 app:layout_constraintStart_toEndOf="@id/fav_list_small_poster"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:targetApi="p"
-                tools:text="@string/star_wars_title" />
+                />
 
             <TextView
                 android:id="@+id/fav_list_film_genre"
@@ -69,7 +69,7 @@
                 app:layout_constraintStart_toEndOf="@id/fav_list_film_year"
                 app:layout_constraintTop_toBottomOf="@id/fav_list_film_title"
                 tools:targetApi="p"
-                tools:text="@string/fantasy" />
+                />
 
             <TextView
                 android:id="@+id/fav_list_film_year"
@@ -84,7 +84,7 @@
                 app:layout_constraintStart_toEndOf="@id/fav_list_small_poster"
                 app:layout_constraintTop_toBottomOf="@id/fav_list_film_title"
                 tools:targetApi="p"
-                tools:text="@string/_2015" />
+                />
 
             <androidx.constraintlayout.widget.Barrier
                 android:id="@+id/barrier"

@@ -9,11 +9,8 @@
     <string name="back_button">back button</string>
     <string name="no_connect_error_message">Произошла ошибка при загрузке данных,\n проверьте подключение к сети</string>
     <string name="no_connection_error">no connection error icon</string>
+    <string name="fileName">"%1$d.jpeg"</string>
     <string name="retry">Повторить</string>
     <string name="favorites">Избранное</string>
-    <string name="not_found">Не найдено</string>
-    <string name="search">Поиск</string>
-    <string name="star_wars_title">Изгой-один: Звёздные войны</string>
-    <string name="fantasy">Фантастика</string>
-    <string name="_2015">2015</string>
+
 </resources>
