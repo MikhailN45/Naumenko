@@ -43,6 +43,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/popular_title"
+        app:layout_constraintBottom_toTopOf="@id/bottom_barrier"
         tools:listitem="@layout/view_holder_film_list" />
 
     <androidx.constraintlayout.widget.Barrier
