@@ -49,12 +49,7 @@ class AdapterFavorites :
                         context.resources.getString(R.string.fileName, item.kinopoiskId)
                     ).toUri()
                 )
-                filmListFilmGenre.text = item.genres.map { it.genre }.joinToString(separator = " , ")
-                    .replaceFirstChar {
-                        if (it.isLowerCase()) it.titlecase(
-                            Locale.getDefault()
-                        ) else it.toString()
-                    }
+                filmListFilmGenre.text = item.genres[0].genre.replaceFirstChar { it.uppercase() }
                 filmListFilmYear.text = item.year
 
                 filmCardList.setOnClickListener {

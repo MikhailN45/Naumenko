@@ -49,13 +49,7 @@ class AdapterFilmList :
                 )
                 filmListFilmTitle.text = item.nameRu
                 filmListFilmYear.text = item.year
-                filmListFilmGenre.text =
-                    item.genres.map { it.genre }.joinToString(separator = " , ")
-                        .replaceFirstChar {
-                            if (it.isLowerCase()) it.titlecase(
-                                Locale.getDefault()
-                            ) else it.toString()
-                        }
+                filmListFilmGenre.text = item.genres[0].genre.replaceFirstChar { it.uppercase() }
                 filmListFavoritesIcon.visibility =
                     if (item.isFavorite) View.VISIBLE else View.INVISIBLE
 
