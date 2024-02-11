@@ -14,7 +14,6 @@ import com.application.naumenko.databinding.ViewHolderFilmListBinding
 import com.application.naumenko.domain.model.About
 import com.application.naumenko.presentation.utils.savePictureToFile
 import java.io.File
-import java.util.Locale
 
 class AdapterFavorites :
     ListAdapter<About, AdapterFavorites.ItemViewHolder>(DiffCallback()) {

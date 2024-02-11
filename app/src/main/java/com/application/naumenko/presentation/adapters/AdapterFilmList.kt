@@ -16,7 +16,6 @@ import com.application.naumenko.presentation.fragments.FragmentFilmDetails
 import com.application.naumenko.domain.model.Film
 import com.application.naumenko.presentation.utils.savePictureToFile
 import java.io.File
-import java.util.Locale
 
 class AdapterFilmList :
     ListAdapter<Film, AdapterFilmList.ItemViewHolder>(DiffCallback()) {
