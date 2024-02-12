@@ -91,13 +91,6 @@ class FragmentFilmDetails : Fragment() {
                 val imageRes =
                     if (state is FilmDetailsUiState.Loading) R.drawable.progressbar_animated else R.drawable.no_connect_error_icon
                 noConnectionIcon.setImageResource(imageRes)
-
-                noConnectionErrorMessage.visibility =
-                    if (state is FilmDetailsUiState.Error) View.VISIBLE else View.GONE
-
-                retryConnectionButton.visibility =
-                    if (state is FilmDetailsUiState.Error) View.VISIBLE else View.GONE
-
             }
         }
     }
