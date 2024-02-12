@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.findNavController
@@ -52,14 +53,6 @@ class FragmentFilmList : Fragment() {
                 val setStatus =
                     if (state is FilmListUiState.Loading) R.drawable.progressbar_animated else R.drawable.no_connect_error_icon
                 noConnectionIcon.setImageResource(setStatus)
-
-                noConnectionErrorMessage.visibility = View.VISIBLE
-                    if (state is Error) View.VISIBLE else View.GONE
-
-
-                retryConnectionButton.visibility = View.VISIBLE
-                    if (state is Error) View.VISIBLE else View.GONE
-
             }
         }
     }
